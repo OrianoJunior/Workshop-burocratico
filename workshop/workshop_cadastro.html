@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição Workshop</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+         .cabecalho{
+            background-image: url(../workshop/img/verde.jpg);
+            width: 100%;
+            height: 14vh;
+            padding-top: 20px;
+        }
+
+        .icone1{
+            width: 36px;
+            height: 31px;
+        }
+
+        .icone2{
+            width: 43px;
+            height: 43px;
+        }
+
+        .botao1_cabecalho{
+            width: 59px;
+            height: 50px;
+            margin-left: 200px;
+            margin-top: 15px;
+            background-color: rgb(32, 202, 151);
+            border: 0px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px rgb(39, 150, 116);
+        }
+
+        .botao2_cabecalho{
+            width: 59px;
+            height: 50px;
+            margin-left: 35px; 
+            margin-top: 15px;
+            background-color: rgb(32, 202, 151);
+            border: 0px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px rgb(39, 150, 116);
+        }
+
+        .botao1_cabecalho:hover{
+            background-color: rgb(21, 129, 97);
+        }
+
+        .botao2_cabecalho:hover{
+            background-color: rgb(21, 129, 97);
+        }
+
+        .h2{
+            padding-top: 10px;
+            text-align: center;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:white;
+            font-size: 30px;
+            text-shadow: 2px 2px 2px black;
+            padding-left: 75px;
+        }
+
+        .estado{
+            width: 50px;
+            height: 70px;
+            padding-right: 500px;
+            padding-left: 90px;
+        }
+
+        .Pr{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:white;
+            font-size: 20px;
+            text-shadow: 2px 2px 2px black; 
+            padding-left: 240px;
+        }
+
+        .sub{
+            font-size: 12px;
+            color: white;
+            text-shadow: 2px 2px 2px black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-left: 40px;
+        }
+
+        .borda{
+            width: 200px;
+            height: 1105px;
+            border-right: 2px solid rgb(190, 190, 190);
+            background-color: rgb(45, 226, 100);
+            float: left;
+            transform: rotate(0deg);
+        }
+
+        .bola1{
+            margin-left: 45px;
+            padding-top: 70px;
+            object-fit: cover;
+        }
+
+        .bola2{
+            margin-left:45px ;  
+        }
+
+        .frase_bola1{
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .frase_bola2{
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding: 20px;
+            
+        }
+       
+        .img_borda{
+            width: 90px;
+            height: 90px;
+            border-radius: 45px;
+            object-fit: cover;
+            border: 1px solid rgb(224, 224, 224);
+            box-shadow: 2px 2px 2px 2px rgb(33, 129, 62);
+        }
+
+        .img2_borda{
+            width: 90px;
+            height: 90px;
+            border-radius: 45px;
+            object-fit: cover;
+            border: 1px solid rgb(224, 224, 224);
+            margin-left: 45px;
+            box-shadow: 2px 2px 2px 2px rgb(33, 129, 62);
+        }
+
+        .img_borda:hover{
+            width:100px ;
+            height: 100px;
+            border-radius: 50px;  
+        }
+
+        .img2_borda:hover{
+            width:100px ;
+            height: 100px;
+            border-radius: 50px;
+        }
+
+        .titulo{
+            text-align: center;
+            font-size: 35px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(43, 189, 145);
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .bloco_principal{
+            padding-top: 20px;
+            width: 1903.4px;
+            height: 1082px;
+            background-color: rgb(236, 236, 236);
+            border-top: 2px solid rgb(190, 190, 190);
+        }
+
+        .tabela_inscricao{
+            margin-left: 167px;
+            width: 500px;
+            height: 700px;
+            border-radius: 15px;
+            background-color: white;
+            border: 1px solid rgb(190, 190, 190);
+            box-shadow: 2px 2px 2px 2px  rgb(197, 197, 197);
+        }
+
+        .simbolo_insc{
+            width: 190px;
+            height: 180px;
+        }
+
+        .frase_do_simbolo{
+            font-size: 22px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(43, 189, 145);
+            text-shadow: 1px 1px 1px black;
+        }
+
+       
+
+        ::placeholder{
+            color: rgb(43, 189, 145);
+        }
+
+        .email{
+            width: 300px;
+            height: 35px;
+            border: 3px solid rgb(43, 189, 145);
+            border-radius: 10px;
+            font-size: 17px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            outline: none;
+            color: rgb(43, 189, 145);
+        }
+
+        .nome{
+            width: 300px;
+            height: 35px;
+            border: 3px solid rgb(43, 189, 145);
+            border-radius: 10px;
+            font-size: 17px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            outline: none;
+            color: rgb(43, 189, 145);
+        }
+
+        .frase_da_data{
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(43, 189, 145);
+        }
+
+        .data{
+            width: 300px;
+            height: 35px;
+            border: 3px solid rgb(43, 189, 145);
+            border-radius: 10px;
+            font-size: 17px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            outline: none;
+            color: rgb(43, 189, 145);
+        }
+
+        .enviar{
+            width: 150px;
+            height: 35px;
+            border: 3px solid rgb(43, 189, 145);
+            border-radius: 10px;
+            font-size: 17px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            outline: none;
+            color: white;
+            background-color: rgb(43, 189, 145);
+        }
+
+        .enviar:hover{
+            background-color: rgb(41, 153, 119);
+            border: 3px solid rgb(41, 153, 119);
+        }
+
+        .rodape{
+           position: absolute;
+           width: 100%;
+           height: 200px;
+           background-image: url(../workshop/img/verde.jpg);
+        }
+
+        .veja_as_redes{
+            font-size: 22px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-left: 450px;
+        }
+
+        .insta{
+            width: 50px;
+            height: 50px;
+        }
+
+        .face{
+            width: 64px;
+            height: 64px;
+        }
+
+        .wpp{
+            width: 42px;
+            height: 42px;
+            
+        }
+
+        .redes_sociais{
+            margin-left: 450px;
+        }
+
+        .estado_simb{
+            width: 60px;
+            height: 74px;
+            margin-left: 400px;
+            padding-top: 22px;
+            float: left; 
+        }
+
+        .pr{
+            margin-left: 600px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .tabela_das_midias{
+            float: left;
+            margin-top: 15px;
+            margin-left: 90px;
+        }
+
+        .tabela_do_simbol{
+            float: left;
+        }
+
+        .frase_rodape{
+            padding-left: 335px;
+            font-size: 16px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .borda_do_rodape{
+            border: 1px solid black;
+        }
+
+        .borda_do_rodape{
+            width: 1701px;
+            border:1px solid  rgb(190, 190, 190);
+            margin-left: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cabecalho">
+        <div>
+            <table>
+                <tr>
+                    <td><img alt="simbolo_do_estado" src="../workshop/img/estado.png" class="estado"></td>
+                    <td class="h2">WORKSHOP REDES DE COMPUTADORES</td>
+                    <td><button id="casa" aria-label="icone_home" class="botao1_cabecalho"><a href="../workshop/workshop_home2.html"><img alt="home" src="../workshop/img/casa-removebg-preview.png" class="icone1"></button></a></td>
+                    <td><button id="login" aria-label="icone_login" class="botao2_cabecalho"><a href="../workshop/workshop_cadastro.html"><img alt="login" src="../workshop/img/person-removebg-preview (1).png" class="icone2"></button></a></td>
+                </tr>
+
+                <tr>
+                    <td class="sub">Governo do Estado do Ceará</td>
+                    <td class="Pr">President Roosevelt</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="borda">
+        <table class="bola1">
+            <tr>
+                <td>
+                    <a href="../workshop/workshop_part2.html"><img alt="Tipo1" src="../workshop/img/sim.jpg" class="img_borda"></a>       
+                </td>
+            </tr>
+
+            <tr class="frase_bola1">
+                <td>Projetos RDC</td>
+            </tr>
+        </table> <br> <br> <br> <br> <br> <br> 
+
+        <table class="bola2">
+            <tr>
+                <a href="../workshop/workshop_part2.html"><img alt="tipo2" src="../workshop/img/sim.jpg" class="img2_borda"></a>       
+            </tr>
+
+            <tr class="frase_bola2">
+                <td>Cronograma</td>
+            </tr>
+        </table> <br> <br> <br> <br> <br> <br>
+
+        <table class="bola2">
+            <tr>
+                <a href="../workshop/workshop_part2.html"><img alt="tipo2" src="../workshop/img/sim.jpg" class="img2_borda"></a>
+            </tr>
+
+            <tr class="frase_bola2">
+                <td>Dados da Escola</td>
+            </tr>
+        </table> <br> <br> <br> <br> <br> <br>
+    </div>
+
+    <div class="bloco_principal">
+        <h3 class="titulo">Realize sua inscrição em nosso Workshop</h3>
+        <center>
+            <div class="tabela_inscricao">
+                <img alt="simbolo" src="../workshop/img/simbolo1-removebg-preview.png" class="simbolo_insc">
+                <p class="frase_do_simbolo">Workshop Pr 2022</p> <br> <br>
+
+                <label>
+                    <input name="email" type="email" placeholder="Digite seu email" class="email">
+                </label> <br> <br> <br>
+
+                <label>
+                    <input name="nome" type="text" placeholder="Digite seu nome completo" class="nome">
+                </label> <br> <br>
+
+                <label>
+                    <p class="frase_da_data">Coloque sua data de nascimento:</p>
+                    <input name="nascimento" type="date" class="data" placeholder="" min="1997-01-01" max="2010-01-31">
+                </label> <br> <br> <br> <br> <br> 
+
+                <input name="botao_enivar" type="submit" value="Fazer Inscrição" class="enviar">
+            </div>
+        </center>    
+    </div>
+
+    <div class="rodape">   
+        <div class="tabela_das_midias">
+            <table class="redes_sociais">
+                <h3 class="veja_as_redes">Veja nossas redes sociais</h3>
+                <tr>
+                    <td>
+                        <a rel="noopener" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank">
+                            <img alt="instagram" src="../workshop/img/insta-removebg-preview.png" class="insta">
+                        </a>
+                    </td>
+                    
+                    <td>
+                        <a rel="noopener" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank">
+                            <img alt="facebook" src="../workshop/img/face.png" class="face">
+                        </a>
+                    </td>
+
+                    <td>
+                        <a rel="noopener" href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank">
+                            <img alt="whatsapp" src="../workshop/img/wpp-removebg-preview.png" class="wpp">
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="borda_do_rodape"></div>
+        
+        <div class="tabela_do_simbol">
+            <table>
+                <tr>
+                    <td><img alt="simbolo do estado" src="../workshop/img/estado.png" class="estado_simb"></td>
+                </tr>
+
+                <tr>
+                    <td class="frase_rodape">
+                        Governo do Estado do Ceará
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="frase_rodape">
+                        EEEP President Roosevelt
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
