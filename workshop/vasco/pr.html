@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop PR</title>
+    <style>
+        body{
+            margin-left: 0px;
+            margin-right: 0px;
+            background-image: url(../vasco/img/fundo1.jpg);
+        }
+
+        .cabecalho{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(22, 22, 44);
+            box-shadow: 2px 2px 2px rgb(17, 17, 32);
+            border-top: 2px solid rgb(15, 15, 27);
+        }
+
+        .pr{
+            font-size: 26px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            text-shadow: 1px 1px 1px rgb(243, 243, 243);
+            padding-top: 15px;
+            padding-left: 30px;
+        }
+
+        .bloco1{
+            font-size: 21px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(16, 16, 51);
+            margin-left: 300px;
+            background-color: rgb(22, 22, 44);
+            box-shadow: 2px 2px 2px rgb(18, 18, 24);
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .bloco2{
+            font-size: 21px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(16, 16, 51);
+            margin-left: 150px;
+            background-color: rgb(22, 22, 44);
+            border: 0px;
+            box-shadow: 2px 2px 2px rgb(18, 18, 24);
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .bloco3{
+            font-size: 21px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(16, 16, 51);
+            margin-left: 150px;
+            background-color: rgb(22, 22, 44);
+            border: 0px;
+            box-shadow: 2px 2px 2px rgb(18, 18, 24);
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .bloco4{
+            font-size: 21px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(16, 16, 51);
+            margin-left: 150px;
+            background-color: rgb(22, 22, 44);
+            border: 0px;
+            box-shadow: 2px 2px 2px rgb(18, 18, 24);
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .bloco5{
+            font-size: 21px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            text-shadow: 2px 2px 2px rgb(16, 16, 51);
+            margin-left: 150px;
+            background-color: rgb(22, 22, 44);
+            border: 0px;
+            box-shadow: 2px 2px 2px rgb(18, 18, 24);
+            border: 0px;
+            border-radius: 5px;
+        }
+
+        .pasta{
+            width: 30px;
+            height: 30px;
+        }
+
+        .bloco1:hover,.bloco2:hover,.bloco3:hover,.bloco4:hover,.bloco5:hover{
+            
+            background-color: rgb(60, 60, 107);
+        }
+
+        .frase1{
+            text-align: center;
+            font-size: 30px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-shadow: 5px 5px 5px rgb(22, 22, 44);
+            margin-top: 150px;
+        }
+
+        .frase2{
+            text-align: center;
+            font-size: 45px;
+            color: white;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-shadow: 5px 5px 5px rgb(22, 22, 44);
+        }
+
+        
+        .barra{
+            width: 680px;
+            height: 66px;
+            border-radius: 15px;
+            background-color: rgba(15, 15, 15,0.8);
+            margin-left: 610px;
+        }
+
+        .lupa{
+            width: 23px;
+            height: 24px;
+            padding-top: 15px;
+            padding-left: 9px;
+        }
+
+        .texto{
+            margin-left: 10px;
+            margin-top: 7px;
+            width: 190px;
+            height: 30px;
+            background-color: rgba(15, 15, 15,0.1);
+            border: 0px;
+            border-left: 2px solid rgb(68, 68, 68);
+            border-right: 2px solid rgb(68, 68, 68);
+            color: white;
+            box-shadow: 0 0 0 0;
+            outline: 0;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .all_projects{
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            padding-top: 5px;
+            padding-left: 10px; 
+        }
+
+        .select{
+            width: 18px;
+            margin-left: 12px;
+            border: 0px;
+            
+        }
+
+        .option{
+            width: 60px;
+            height: 10px;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif];
+            
+        }
+
+        .encontrar{
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 160px;
+            height: 40px;
+            border-radius: 10px;
+            margin-left: 65px;
+            margin-top: 10px;
+            background-color: rgb(22, 22, 44);
+            color: white;
+            border: 0px;
+            box-shadow: 1px 1px 1px rgb(32, 32, 46);
+        }
+
+        .encontrar:hover{
+            background-color: rgb(38, 38, 77);
+        }
+
+        .seta{
+            width: 15px;
+            height: 12px;
+        }
+
+        .rodape{
+            margin-top: 220px;
+            width: 100%;
+            height: 300px;
+            background-color: rgb(22, 22, 44);
+        }
+
+        .rodape2{
+            width: 100%;
+            height: 70px;
+            background-color: rgb(240, 240, 240);
+            box-shadow: 7px 7px 7px 7px rgb(161, 161, 161);
+        }
+
+        .img1{
+            width: 50px;
+            height: 50px;
+            padding-left: 170px;
+        }
+
+        .img2{
+            width: 50px;
+            height: 50px;
+            padding-left: 278px;
+        }
+
+        .img3{
+            width: 50px;
+            height: 50px;
+            padding-left: 344px;
+        }
+
+        .edif{
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 80px;
+            text-align: center;
+            margin-left: 130px;
+            color: white;
+            text-shadow: 1px 1px 1px rgb(17, 17, 32);
+            border-radius: 4px;
+            background-color: rgb(22, 22, 44);
+            border: 0px;
+            box-shadow: 2px 2px 2px rgb(18, 18, 24);
+            
+        }
+
+        .edif:hover, .est:hover, .rdc:hover{
+            background-color: rgb(60, 60, 107);
+        }
+
+        .est{
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 80px;
+            margin-left: 250px;
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 1px rgb(15, 15, 26);
+            background-color: rgb(22, 22, 44);
+            border: 0px;
+            box-shadow: 2px 2px 2px rgb(18, 18, 24);
+            border-radius: 4px;
+        }
+
+        .rdc{
+            font-size: 25px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            margin-top: 80px;
+            margin-left: 230px;
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 1px rgb(17, 17, 32);
+            background-color: rgb(22, 22, 44);
+            border: 0px;
+            box-shadow: 2px 2px 2px rgb(18, 18, 24);
+            border-radius: 4px;
+        }
+
+        .rodape2{
+            width: 100%;
+            height: 67px;
+            background-color: white;
+            margin-top: 100px;
+        }
+
+        .insta{
+            width: 35px;
+            height: 35px;
+            padding-left: 130px;
+            padding-top: 12px;
+        }
+
+        .face{
+            width: 44px;
+            height: 44px;
+            padding-left: 25px;
+            padding-top: 12px;
+        }
+
+        .wpp{
+            width: 30px;
+            height: 30px;
+            padding-left: 25px;
+            padding-top: 12px;
+        }
+
+        .frase_rodape2{
+            text-align: left;
+            font-size: 14px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            padding-top: 10px;
+        }
+
+        .estado{
+            width: 32px;
+            height: 42px;
+            padding-left: 450px;
+            padding-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="cabecalho">
+        <table>
+            <tr>
+                <td class="pr">Alguma Coisa <br> Aqui</td>
+                <td><button class="bloco1">Como Funciona?</button></td>
+                <td><button class="bloco2">Cronograma</button></td>
+                <td><button class="bloco3">Inscrição</button></td>
+                <td><button class="bloco4">Projetos Antigos</button></td>
+                <td><button class="bloco5">Dados da Escola</button></td>
+            </tr>
+        </table>
+   </div>
+
+   <div class="corpo">
+        <h3 class="frase1">WORKSHOP: CURSOS TÉCNICOS E SEUS PROJETOS <br> <p class="frase2">EEEP President Roosevelt</p></h3>
+   </div> <br> <br>
+
+    
+        <div class="barra">
+            <table>
+                <tr>
+                    <td><img alt="lupa" src="../vasco/img/lupaa-removebg-preview.png" class="lupa"></td>
+                    <td><input aria-label="text" name="text" type="text" id="procura" class="texto"></td>
+                    <td class="all_projects">Todos os projetos
+                        <select class="select">
+                            <option></option>
+                            <option class="option">opção 1</option>
+                            <option class="option">opção 2</option>
+                            <option class="option">opção 3</option>
+                            <option class="option">opção 4</option>
+                            <option class="option">opção 5</option>
+                            <option class="option">opção 6</option>
+                        </select>
+                    </td>
+                    <td><button class="encontrar"><img alt="seta" src="../vasco/img/seta-removebg-preview.png" class="seta"> Encontrar projeto</button></td>
+                </tr>
+            </table>
+        </div>
+      
+        <div class="rodape"> 
+            <center>
+            <table>
+                <tr>
+                    <td><button class="edif">Edificações</button></td>
+                    <td><button class="est">Estética</button></td>
+                    <td><button class="rdc">Redes de Computadores</button></td>
+                </tr>
+
+                <tr>
+                    <td><img alt="edif" src="../vasco/img/predio-removebg-preview.png" class="img1"></td>
+                    <td><img alt="estetica" src="../vasco/img/estetica-removebg-preview.png" class="img2"></td>
+                    <td><img alt="redes" src="../vasco/img/pc-removebg-preview.png" class="img3"></td>
+                    <td></td>
+                </tr>
+            </table>
+            </center>
+
+            <div class="rodape2">
+                <table>
+                    <tr>
+                        <td class="frase_rodape2">@Governo do estado do Ceará</td>
+                        <td><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank"><img alt="insta" src="../vasco/img/insta-removebg-preview.png" class="insta"></a></td>
+                        <td><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank"><img alt="face" src="../vasco/img/face.png" class="face"></a></td>
+                        <td><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank"><img alt="wpp" src="../vasco/img/wpp-removebg-preview.png" class="wpp"></a></td>
+                        <td><img alt="estado" src="../vasco/img/estado.png" class="estado"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
