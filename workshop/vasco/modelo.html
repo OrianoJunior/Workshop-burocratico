@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modelo Workshop</title>
     <style>
-        body{
-            background-image: url(../vasco/img/fundo00.jpg);
+        body {
+
             margin: 0px;
         }
 
-        .linha1{
-            
+        .cabesalho {
+            background-image: url(../vasco/img/fundo00.jpg);
+            /* Set a specific height */
+            min-height: 900px;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .linha1 {
+
             padding: 8px;
             background-color: rgba(153, 153, 153, 0.2);
             border-bottom: 1px solid white;
         }
 
-        .governo{
+        .governo {
             padding-left: 300px;
         }
-        
-        p{
+
+        p {
             float: left;
             color: white;
             font-size: 12px;
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
-        .inscricao{
+        .inscricao {
             margin-top: 4px;
             margin-left: 1100px;
             width: 150px;
@@ -42,11 +55,11 @@
             color: white;
         }
 
-        .inscricao:hover{
+        .inscricao:hover {
             background-color: rgba(65, 185, 119, 0.5);
         }
 
-        .alas{
+        .alas {
             font-size: 18px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: white;
@@ -56,7 +69,7 @@
             background-color: transparent;
         }
 
-        .cronograma{
+        .cronograma {
             width: 130px;
             height: 35px;
             font-size: 17px;
@@ -64,12 +77,12 @@
             color: rgb(255, 255, 255);
             background-color: transparent;
             border: 0px;
-            border-radius: 12px ;
+            border-radius: 12px;
             margin-top: 35px;
             margin-left: 500px;
         }
 
-        .antigos{
+        .antigos {
             width: 170px;
             height: 35px;
             font-size: 17px;
@@ -77,37 +90,39 @@
             color: rgb(255, 255, 255);
             background-color: transparent;
             border: 0px;
-            border-radius: 12px ;
+            border-radius: 12px;
             margin-top: 35px;
             margin-left: 50px;
         }
 
-        .dados{
+        .dados {
             width: 160px;
             height: 35px;
             font-size: 17px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: rgb(255, 255, 255);
             background-color: transparent;
-            border:0px;
-            border-radius: 12px ;
+            border: 0px;
+            border-radius: 12px;
             margin-top: 35px;
             margin-left: 50px;
         }
 
-        .cronograma:hover, .antigos:hover, .dados:hover{
+        .cronograma:hover,
+        .antigos:hover,
+        .dados:hover {
             background-color: rgba(255, 255, 255, 0.1);
         }
 
-        .titulo{
+        .titulo {
             text-align: center;
             font-size: 30px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: white;
-            text-shadow: 2px 2px 2px  rgb(24, 27, 37);
+            text-shadow: 2px 2px 2px rgb(24, 27, 37);
         }
-      
-        .mini_texto{
+
+        .mini_texto {
             text-align: center;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: white;
@@ -115,21 +130,21 @@
             text-shadow: 2px 2px 2px rgb(24, 27, 37);
         }
 
-       
 
-        .saiba_mais{
+
+        .saiba_mais {
             width: 170px;
             height: 38px;
             font-size: 18px;
             border-radius: 16px;
-            border:2px solid white;
+            border: 2px solid white;
             background-color: rgba(24, 27, 37, 0.3);
             color: white;
             padding-top: 3px;
-            text-shadow: 1px 1px 1px  black;
+            text-shadow: 1px 1px 1px black;
         }
 
-        .mais{
+        .mais {
             width: 17px;
             height: 17px;
             padding-right: 3px;
@@ -137,17 +152,17 @@
             float: right;
         }
 
-        .saiba_mais:hover{
-            background-color: rgba(45, 50, 66,0.8);
+        .saiba_mais:hover {
+            background-color: rgba(45, 50, 66, 0.8);
         }
 
-        .bloco2{
+        .bloco2 {
             width: 100%;
             height: 1050px;
-            background-color: white;  
+            background-color: white;
         }
 
-        .bloco_imagem{
+        .bloco_imagem {
             width: 450px;
             height: 300px;
             box-shadow: 2px 2px 2px 2px rgb(219, 219, 219);
@@ -155,12 +170,12 @@
             margin-left: 420px;
             margin-top: 150px;
         }
-        
-        .bloco_img{
+
+        .bloco_img {
             float: left;
         }
-    
-        .bloco_texto{
+
+        .bloco_texto {
             float: left;
             width: 500px;
             height: 500px;
@@ -168,17 +183,17 @@
             margin-top: 100px;
         }
 
-        .titulo_bloco{
+        .titulo_bloco {
             font-size: 27px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
-        
-        .texto_bloco{
+
+        .texto_bloco {
             font-size: 16px;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
-        .consulte{
+        .consulte {
             width: 120px;
             height: 30px;
             font-size: 15px;
@@ -188,128 +203,128 @@
             background-color: rgb(236, 236, 236);
         }
 
-        .consulte:hover{
+        .consulte:hover {
             background-color: rgb(199, 199, 199);
         }
 
-        .circulos{
-            float:left;
+        .circulos {
+            float: left;
             width: 1400px;
             height: 400px;
             margin-left: 400px;
             margin-top: 150px;
         }
 
-        h5{
+        h5 {
             font-size: 20px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             color: rgb(24, 27, 37);
-            
+
         }
 
-        .bola_edif{
+        .bola_edif {
             box-shadow: 2px 2px 2px rgb(219, 219, 219);
             width: 160px;
             height: 160px;
             border-radius: 80px;
-            background-color: rgba(24,27,37,0.1);
+            background-color: rgba(24, 27, 37, 0.1);
             float: left;
         }
 
-        .img_bola1{
+        .img_bola1 {
             width: 70px;
             height: 70px;
             padding-top: 35px;
         }
 
-        .bola_est{
+        .bola_est {
             box-shadow: 2px 2px 2px rgb(219, 219, 219);
             float: left;
             margin-left: 340px;
             width: 160px;
             height: 160px;
             border-radius: 80px;
-            background-color: rgba(24,27,37,0.1);
+            background-color: rgba(24, 27, 37, 0.1);
         }
 
-        .img_bola2{
+        .img_bola2 {
             width: 60px;
             height: 60px;
             padding-top: 42px;
         }
 
-        .bola_redes{
+        .bola_redes {
             box-shadow: 2px 2px 2px rgb(219, 219, 219);
             float: left;
             margin-left: 340px;
             width: 160px;
             height: 160px;
             border-radius: 80px;
-            background-color: rgba(24,27,37,0.1);
+            background-color: rgba(24, 27, 37, 0.1);
         }
 
-        .bola_edif:hover, .bola_est:hover, .bola_redes:hover{
+        .bola_edif:hover,
+        .bola_est:hover,
+        .bola_redes:hover {
             background-color: rgb(207, 207, 207);
         }
 
 
-        .img_bola3{
+        .img_bola3 {
             width: 85px;
             height: 85px;
             padding-top: 34px;
         }
 
-        #edif{
+        #edif {
             padding-top: 36px;
         }
 
-        #est{
+        #est {
             padding-top: 41px;
         }
 
-        #redes{
+        #redes {
             padding-top: 26px;
         }
 
-        .rodape{
+        .rodape {
             background-color: rgba(24, 27, 37, 0.8);
             width: 100%;
             height: 80px;
         }
 
-        .eeep{
+        .eeep {
             font-size: 14px;
             color: white;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
 
-        .face{
+        .face {
             width: 32px;
             height: 32px;
             padding-left: 100px;
             padding-top: 5px;
         }
 
-        .insta{
+        .insta {
             width: 32px;
             height: 32px;
             padding-left: 30px;
             padding-top: 6px;
         }
 
-        .estado{
+        .estado {
             width: 30px;
             height: 40px;
             padding-left: 605px;
             padding-top: 5px;
         }
-
-
-
     </style>
 </head>
+
 <body>
-   <div class="cabecalho">
+    <div class="cabesalho">
         <div class="linha1">
             <p class="governo">Governo do Estado do Ceará</p><button class="inscricao">Faça sua inscrição</button>
         </div>
@@ -323,16 +338,16 @@
                     <td><button class="dados">DADOS DA ESCOLA</button></td>
                 </tr>
             </table>
-        </div> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+        </div>
 
         <div class="texto_cabecalho">
             <h3 class="titulo">BEM-VINDO AO WORKSHOP DOS CURSOS TÉCNICOS DA EEEP PRESIDENT ROOSEVELT</h3>
-            <h5 class="mini_texto">Conheça sobre cada curso da escola técnina e seus projetos que bhsbf dmkdsi ikvaii enfaufioi majasnvudf  fdsf <br> safa oopoejn snuhudfk mnfjneu nmjdfuem kfdime dsfsfsf plqwkifmu ydywvb</h5>
+            <h5 class="mini_texto">Conheça sobre cada curso da escola técnina e seus projetos que bhsbf dmkdsi ikvaii enfaufioi majasnvudf fdsf <br> safa oopoejn snuhudfk mnfjneu nmjdfuem kfdime dsfsfsf plqwkifmu ydywvb</h5>
             <center><button class="saiba_mais">Saiba Mais<img alt="mais" src="../vasco/img/mais.png" class="mais"></button></center>
         </div>
-   </div> <br> <br> <br> <br> <br> <br>
-    
-   <div class="bloco2">
+    </div>
+
+    <div class="bloco2">
         <div class="bloco_img">
             <img alt="projetos" src="../vasco/img/project.jpg" class="bloco_imagem">
         </div>
@@ -345,23 +360,29 @@
 
         <div class="circulos">
             <div class="bola_edif">
-            <center><img alt="edificações" src="../vasco/img/edif.png" class="img_bola1"></center>
-            <center><h5 id="edif">Edificações</h5></center>  
+                <center><img alt="edificações" src="../vasco/img/edif.png" class="img_bola1"></center>
+                <center>
+                    <h5 id="edif">Edificações</h5>
+                </center>
             </div>
-    
-            <div class="bola_est">
-            <center><img alt="estetica" src="../vasco/img/estetica.png" class="img_bola2"></center>
-                <center><h5 id="est">Estética</h5></center>
-            </div>
-    
-            <div class="bola_redes">
-            <center><img alt="redes" src="../vasco/img/redes.png" class="img_bola3"></center>
-            <center><h5 id="redes">Redes de computadores</h5></center>  
-            </div>
-        </div> 
-   </div> <br> <br> <br> <br> <br>
 
-   <div class="rodape">
+            <div class="bola_est">
+                <center><img alt="estetica" src="../vasco/img/estetica.png" class="img_bola2"></center>
+                <center>
+                    <h5 id="est">Estética</h5>
+                </center>
+            </div>
+
+            <div class="bola_redes">
+                <center><img alt="redes" src="../vasco/img/redes.png" class="img_bola3"></center>
+                <center>
+                    <h5 id="redes">Redes de computadores</h5>
+                </center>
+            </div>
+        </div>
+    </div> <br> <br> <br> <br> <br>
+
+    <div class="rodape">
         <table>
             <tr>
                 <td class="eeep">EEEP President Roosevelt</td>
@@ -370,7 +391,7 @@
                 <td><img alt="estado" src="../vasco/img/estado.png" class="estado"></td>
             </tr>
         </table>
-   </div>
+    </div>
 
 
 
@@ -387,4 +408,5 @@
 
 
 </body>
+
 </html>
